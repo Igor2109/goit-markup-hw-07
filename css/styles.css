@@ -329,7 +329,7 @@ display: block;
   background-size: cover;
   padding-top: 112px;
   height: 432px;
-  /* padding: 188px 0; */
+  
 }
 .section-hero {
   max-width: 1440px;
@@ -805,23 +805,17 @@ display: none;
         gap: 24px;
       }
     }
-/* @media only screen and (max-width: 428px) {
-  .portfolio .container-list {
-    display: flex;
-    flex-wrap: nowrap;
-    max-width: 428px;
-  }
-} */
-
-
-
-
-
 
 
 .cards {
   width: 100%;
-  /* width: calc((100% - 24px) / 2); */
+  
+}
+
+@media only screen and (min-width: 768px) {
+  .cards {
+    width: calc((100% - 24px) / 2);
+  }
 }
 @media screen and (min-width: 1200px) {
   .cards {
