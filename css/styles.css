@@ -297,6 +297,11 @@ display: block;
   color: var(--slate-clr);
   transition: color var(--anim-fast);
 }
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .contacts {
+    font-size: 12px;
+  }
+}
 /**
   |============================
   | Header box
@@ -331,6 +336,8 @@ display: block;
   height: 432px;
   
 }
+
+
 .section-hero {
   max-width: 1440px;
   margin-right: auto;
@@ -364,7 +371,7 @@ display: block;
 }
 @media only screen and (min-width: 1158px) {
   .hero-bcg {
-    padding-top: 188px;
+    /* padding-top: 188px; */
 
   }
 }
@@ -488,10 +495,10 @@ display: none;
 
   
 }
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 767px) {
   .skills-header {
     font-weight: 700;
-  font-size: 36px;
+  font-size: 20px;
 line-height: 40px;
 text-align: center;
   margin-right: auto;
@@ -501,7 +508,7 @@ text-align: center;
 @media only screen and (min-width: 768px) {
   .skills-header {
     font-weight: 700;
-  font-size: 36px;
+  font-size: 20px;
 line-height: 40px;
   }
 }
@@ -509,9 +516,7 @@ line-height: 40px;
   color: var(--slate-clr);
 }
 .feature-one {
-  width: calc((100%-72px) / 4);
-  /* width: 396px;
-height: 48px; */
+ 
 }
 @media only screen and (max-width: 428px) {
   .feature-one {
@@ -617,6 +622,7 @@ display: none;
 }
 
 .img-team {
+  display: flex;
   flex-direction: column;
   gap: 72px;
   max-width: 264px;
@@ -817,7 +823,7 @@ display: none;
     width: calc((100% - 24px) / 2);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .cards {
     width: calc((100% - 48px) / 3);
   }
@@ -954,7 +960,9 @@ display: none;
 } */
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .custom-container {
-    max-width: 584px;
+    max-width: 552px;
+    gap: 72px 24px;
+    justify-content: start;
   }
 }
 .left-side {
@@ -994,7 +1002,11 @@ display: none;
   display: inline-block;
   margin-bottom: 16px;
 }
-
+@media only screen and (min-width: 768px) {
+  .logo-ftr {
+   margin-right: auto; 
+  }
+}
 @media only screen and (max-width: 1157px) {
   .social-title {
     text-align: start;
