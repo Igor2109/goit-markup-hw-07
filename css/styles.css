@@ -323,7 +323,7 @@ body {
   background-position: center;
   background-size: cover;
   padding-top: 112px;
-  height: 432px;
+  padding-bottom: 112px;
 }
 
 /* Phone */
@@ -410,7 +410,7 @@ body {
   color: var(--white-clr);
   margin-bottom: 72px;
   /* margin-bottom: 48px; */
-  width: 496px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -428,7 +428,8 @@ body {
 }
 @media only screen and (min-width: 1158px) {
   .hero-bcg {
-    /* padding-top: 188px; */
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
 }
 /* Hero Button */
@@ -533,7 +534,7 @@ body {
 
 .skills-header {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 36px;
   line-height: 24px;
 
   letter-spacing: 0.02em;
@@ -543,7 +544,7 @@ body {
 @media only screen and (max-width: 767px) {
   .skills-header {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 36px;
     line-height: 40px;
     text-align: center;
     margin-right: auto;
@@ -553,7 +554,7 @@ body {
 @media only screen and (min-width: 768px) {
   .skills-header {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 36px;
     line-height: 40px;
   }
 }
@@ -683,7 +684,7 @@ body {
     flex-direction: row;
     justify-content: center;
     gap: 64px 24px;
-    min-width: 768px;
+    max-width: 552px;
   }
 }
 /* Desktop */
@@ -949,7 +950,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .clients-list {
-    gap: 24px;
+    gap: 72px 24px;
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -1106,19 +1107,25 @@ body {
 .footer-subscribe {
   display: flex;
 
-  gap: 0px;
+  gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
 }
 .subscribe-label {
-  margin-right: 24px;
+  /* margin-right: 24px; */
 }
 @media only screen and (min-width: 1158px) {
   .footer-subscribe {
     flex-wrap: nowrap;
-    gap: 0;
+    gap: 24px;
   }
 }
+@media only screen and (max-width: 1157px) {
+  .subscribe-label {
+    margin-right: 8px;
+  }
+}
+
 .footer-text {
   font-size: 12px;
   line-height: 1.5;
@@ -1207,6 +1214,11 @@ input::placeholder {
   border-radius: 4px;
 
   transition: transform var(--anim-slow), opacity var(--anim-slow);
+}
+@media only screen and (max-width: 424px) {
+  .modal {
+    max-width: 325px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .modal {
@@ -1443,7 +1455,7 @@ input::placeholder {
 
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 80px 40px 40px;
   background-color: var(--white-clr);
   z-index: 999;
 
@@ -1489,6 +1501,9 @@ input::placeholder {
   text-transform: capitalize;
   color: var(--navy-blue-clr);
 }
+.studio {
+  color: var(--ocean-clr);
+}
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
   color: var(--ocean-clr);
@@ -1498,17 +1513,26 @@ input::placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 40px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--slate-clr);
+  color: var(--ocean-clr);
 }
 
+@media only screen and (min-width: 320px) and (max-width: 424px) {
+  .mobile-tel {
+    font-size: 22px;
+  }
+}
 .mobile-social {
   gap: 56px;
 }
-
+@media only screen and (max-width: 424px) {
+  .mobile-social {
+    gap: 36px;
+  }
+}
 .mobile-contacts {
   display: flex;
   flex-direction: column;
