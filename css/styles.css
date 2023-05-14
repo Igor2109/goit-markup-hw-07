@@ -410,13 +410,19 @@ body {
   color: var(--white-clr);
   margin-bottom: 72px;
   /* margin-bottom: 48px; */
-  max-width: 496px;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
+
+@media only screen and (max-width: 420px) {
+  .hero-header {
+    max-width: 320px;
+  }
+} 
 @media only screen and (min-width: 768px) {
   .hero-header {
-    max-width: 1157px;
+    max-width: 496px;
     font-size: 56px;
     margin-bottom: 36px;
   }
@@ -558,15 +564,25 @@ body {
     line-height: 40px;
   }
 }
+@media only screen and (min-width: 1158px) {
+  .skills-header {
+    font-size: 20px;
+  }
+}
 .skills-text {
   color: var(--slate-clr);
+}
+@media only screen and (max-width: 425px) {
+  .skills-text {
+    
+  }
 }
 .feature-one {
 }
 @media only screen and (max-width: 428px) {
   .feature-one {
-    width: 396px;
-    height: 96px;
+    /* width: 396px;
+    height: 96px; */
   }
 }
 @media only screen and (min-width: 768px) {
@@ -607,10 +623,15 @@ body {
 .bcg-team {
   line-height: 1.11;
   background-color: var(--navy-blue-modal-clr);
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
-
+@media only screen and (min-width: 1158px) {
+  .bcg-team {
+    padding-top: 120px;
+  padding-bottom: 120px;
+  }
+}
 @media only screen and (max-width: 1158px) {
   .bcg-img {
     display: none;
@@ -693,7 +714,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    min-width: 1158px;
+    min-width: 1128px;
   }
 }
 .team-personal {
@@ -928,9 +949,15 @@ body {
   |============================
 */
 .section-custom {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
+@media only screen and (min-width: 1158px) {
+  .section-custom {
+    padding-top: 120px;
+  padding-bottom: 120px;
+  }
+} 
 .title {
   font-size: 36px;
   line-height: 1.1;
@@ -1122,7 +1149,7 @@ body {
 }
 @media only screen and (max-width: 1157px) {
   .subscribe-label {
-    margin-right: 8px;
+    /* margin-right: 8px; */
   }
 }
 
@@ -1139,6 +1166,11 @@ body {
   outline: none;
   color: var(--white-clr);
   padding-left: 16px;
+}
+@media only screen and (max-width: 427px) {
+  .footer-text {
+    width: 310px;
+  }
 }
 input::placeholder {
   font-size: 12px;
@@ -1487,7 +1519,7 @@ input::placeholder {
 
 .mobile-menu .link {
   display: block;
-  padding: 10px;
+  padding: 20px;
   text-decoration: none;
 }
 
@@ -1530,7 +1562,7 @@ input::placeholder {
 }
 @media only screen and (max-width: 424px) {
   .mobile-social {
-    gap: 36px;
+    gap: 28px;
   }
 }
 .mobile-contacts {
